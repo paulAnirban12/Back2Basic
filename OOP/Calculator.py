@@ -46,7 +46,7 @@ class Calculator:
 class ScientificCalculator(Calculator):
 
     def average(self, *numbers):
-        result = self.add(*numbers)
+        result = super().add(*numbers)
         total_numbers = len(numbers)
         result /= total_numbers
         print(f"The average of {numbers} is {result:.2f}")
